@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "vocalizemon",
+	"version": "${version}",
+	"name": "vocalizemon",
+	"description": "pokemon can make some noise",
+	"authors": [
+		"cheer4lyfe"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/vocalizemon/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.payaseeds.vocalizemon.Vocalizemon"
+		],
+		"fabric-datagen": [
+			"net.payaseeds.vocalizemon.VocalizemonDataGenerator"
+		],
+		"client": [
+			"net.payaseeds.vocalizemon.VocalizemonClient"
+		]
+	},
+	"mixins": [
+		"vocalizemon.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
