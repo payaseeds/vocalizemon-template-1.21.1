@@ -1,0 +1,26 @@
+plugins {
+    id 'fabric-loom' version '0.10-SNAPSHOT'
+    id 'java'
+}
+
+group = 'com.example'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+    maven { url = uri("https://maven.fabricmc.net/") }
+}
+
+dependencies {
+    modCompile "com.cobblemon:cobblemon-fabric:1.6.1+1.21.1"
+}
+
+tasks.named('jar') {
+    manifest {
+        attributes([
+                'Fabric-Loom-Version': '0.10-SNAPSHOT',
+                'Fabric-API-Version': '1.0.0',
+                'Main-Class': 'net.payaseeds.vocalizemon'
+        ])
+    }
+}

@@ -1,11 +1,11 @@
 {
 	"schemaVersion": 1,
 	"id": "vocalizemon",
-	"version": "${version}",
+	"version": "1.0.0",
 	"name": "vocalizemon",
-	"description": "pokemon can make some noise",
+	"description": "yayy",
 	"authors": [
-		"cheer4lyfe"
+		"payaseeds"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -32,7 +32,8 @@
 		"fabricloader": ">=0.16.10",
 		"minecraft": "~1.21.1",
 		"java": ">=21",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"cobblemon": "1.6.1+1.21.1"
 	},
 	"suggests": {
 		"another-mod": "*"
